@@ -576,16 +576,22 @@
         /* On screens with a maximum width of 768px */
         @media (max-width: 768px) {
           .category-block-current-two {
-            width: 100%; /* Make them 100% wide to stack two in a row */
-            margin-right: 35%; /* Center the blocks horizontally */
-            margin-left: 35%; /* Center the blocks horizontally with 5% left margin */
+            position: relative;
+            max-width: var(--container-width);
+            padding: 0px 15px;
+            margin: 0 auto;
+            width: 100%;
+          }
+          #Courses {
+            display: flex;
+            align-items: center;
+            margin-left: 5%;
           }
         }
 
         /* Other CSS styles for your elements */
         .category-block-current-two {
           box-sizing: border-box;
-          margin-right: 5px; /* Add some spacing between the blocks */
         }
 
         .block-1 {

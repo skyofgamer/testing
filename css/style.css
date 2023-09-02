@@ -11701,23 +11701,6 @@ Sidebar
 
 /* Clear the float after every 6th element to create a new row */
 
-@media (max-width: 768px) {
-  .category-block-current-two {
-    width: 100%; /* Change the width to 50% to stack two in a row */
-    margin-right: auto; /* Center the blocks horizontally */
-    margin-left: 15%; /* Center the blocks horizontally */
-  }
-}
-
-.testimonial-section {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.contact-details__right {
-  margin-left: -900px;
-}
-
 #about {
   margin-left: 10%;
 }
