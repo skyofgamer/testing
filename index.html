@@ -563,39 +563,45 @@
       <style>
         .category-block-current-two {
           box-sizing: border-box;
-          width: 15%; /* Set the width to one-sixth of the container */
           display: flex;
           justify-self: center;
         }
 
         .block-1 {
-          margin-left: 85px;
+          margin-left: 0; /* Remove the margin-left */
         }
+
         /* Clear the float after every 6th element to create a new row */
 
         /* On screens with a maximum width of 768px */
         @media (max-width: 768px) {
           .category-block-current-two {
             position: relative;
-            max-width: var(--container-width);
             padding: 0px 15px;
             margin: 0 auto;
             width: 100%;
           }
+          .category-block-current-two {
+            box-sizing: 0;
+            display: block;
+            justify-self: center;
+          }
+
           #Courses {
             display: flex;
             align-items: center;
             margin-left: 5%;
+            display: flex;
+            justify-content: center;
           }
         }
 
-        /* Other CSS styles for your elements */
-        .category-block-current-two {
-          box-sizing: border-box;
-        }
-
-        .block-1 {
-          margin-left: 0px;
+        /* On screens with a maximum width of 400px (mobile screens) */
+        @media (max-width: 400px) {
+          .category-block-current-two,
+          .block-1 {
+            width: 100%; /* Make both elements full width on mobile */
+          }
         }
 
         .category-block-current-two {

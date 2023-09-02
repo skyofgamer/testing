@@ -11695,8 +11695,7 @@ Sidebar
 .category-block-current-two {
   box-sizing: border-box;
   width: 15%; /* Set the width to one-sixth of the container */
-  display: flex;
-  justify-self: center;
+  
 }
 
 /* Clear the float after every 6th element to create a new row */
