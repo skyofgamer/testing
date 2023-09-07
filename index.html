@@ -49,11 +49,19 @@
       <header id="home" class="main-header header-style-one">
         <!-- Main box -->
         <div class="main-box">
+          
+          <style>
+            @media screen and (min-width: 1275px) {
+    .outer-box {
+      margin-left: 400px;
+    }}
+          </style>
+          
           <div class="logo-box">
             <div class="logo">
               <button onclick="window.location.reload">
-                <img src="images/logo.png" alt="" title="Tronis" />
-              </button>
+                <img style="margin-right: 10px;" src="images/logo.png" alt="" title="Tronis" />
+              </button
             </div>
           </div>
 
@@ -61,7 +69,7 @@
           <div class="nav-outer">
             <nav class="nav main-menu">
               <ul class="navigation">
-                <li class="current"><a href="#home">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#Courses">Courses</a></li>
                 <li><a href="#teachers">Teachers</a></li>
@@ -501,9 +509,10 @@
                   data-textalign="['top','top','top','top']"
                   data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                 >
-                  <h1>
+                  <h1 style="overflow: visible; height: 250px;">
                     Best <span class="style-font">online</span> <br />courses
-                    from eduLerns
+                    from The Knowledge Arena
+                    <br>
                   </h1>
                 </div>
 
@@ -1067,7 +1076,7 @@
       <!-- Team Section -->
       <br /><br />
       <!-- Call To Action Two -->
-      <section style="margin-top: 10%" class="signup-section">
+      <section style="margin-top: 10% " class="signup-section">
         <div class="auto-container">
           <div class="anim-icons">
             <span class="icon icon-paper-clip bounce-x"></span>
@@ -1119,7 +1128,7 @@
                       </div>
 
                       <div class="form-group">
-                        <select class="custom-select">
+                        <select style="width: 100%;" class="custom-select">
                           <option value="">Select course</option>
                           <option value="UI/UX Designing">
                             UI/UX Designing
@@ -1149,34 +1158,7 @@
         </div>
       </section>
       <br /><br />
-      <section
-        class="call-to-action"
-        style="background-image: url(./images/background/1.jpg)"
-      >
-        <div class="anim-icons">
-          <span class="icon icon-calculator zoom-one"></span>
-          <span class="icon icon-pin-clip zoom-one"></span>
-          <span class="icon icon-dots"></span>
-        </div>
-
-        <div class="auto-container">
-          <div class="row">
-            <div class="title-column col-lg-8 col-md-12">
-              <div class="inner-column">
-                <div class="sec-title light">
-                  <span class="style-font">Get your quality</span>
-                  <h1>Skills certificate <br />from the edulerns</h1>
-                  <a href="l" class="theme-btn btn-style-one"
-                    ><span class="btn-title">Get started now</span></a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="image-column col-lg-4 col-md-12"></div>
-          </div>
-        </div>
-      </section>
+      
       <!--End Call To Action Two -->
 
       <!-- Testimonial Section Three -->

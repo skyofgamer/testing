@@ -47,10 +47,10 @@ License: copyright commercial
 @import url("tm-utility-classes.css");
 :root {
   --theme-color1: #191e24;
-  --theme-color2: #00c7c4;
+  --theme-color2: #02a65c;
   --theme-color3: #7054e6;
-  --theme-color4: #f89321;
-  --theme-color5: #ef5c72;
+  --theme-color4: #f8bc20;
+  --theme-color5: #f8bc20;
   --bg-theme-color1: var(--theme-color1);
   --bg-theme-color2: var(--theme-color2);
   --bg-theme-color3: var(--theme-color3);
@@ -2228,7 +2228,7 @@ Main Header
   display: block;
 }
 .main-header .logo img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 .main-header .main-box {
@@ -4638,7 +4638,7 @@ Section Title
 .features-section {
   position: relative;
   padding: 80px 0 30px;
-  background-color: var(--bg-theme-color3) !important;
+  background-color: var(--bg-theme-color2) !important;
   z-index: 2;
 }
 .features-section:before {
@@ -5486,6 +5486,9 @@ Section Title
 ***/
 .signup-section {
   position: relative;
+  width: 100%;
+  right: 0;
+  margin-left: 0 !important;
 }
 .signup-section:before {
   position: absolute;
@@ -6582,7 +6585,7 @@ Section Title
   width: 70px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: var(--bg-theme-color3);
+  background-color: var(--theme-color2);
   background-image: url(../images/icons/icon-quote.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -11539,6 +11542,7 @@ Sidebar
 .main-footer .about-widget .logo {
   position: relative;
   margin-bottom: 22px;
+  margin-right: 10px;
 }
 .main-footer .about-widget .text {
   font-size: 20px;
@@ -11695,7 +11699,6 @@ Sidebar
 .category-block-current-two {
   box-sizing: border-box;
   width: 15%; /* Set the width to one-sixth of the container */
-  
 }
 
 /* Clear the float after every 6th element to create a new row */
