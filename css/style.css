@@ -45,6 +45,7 @@ License: copyright commercial
 @import url("flaticon.css");
 @import url("tm-bs-mp.css");
 @import url("tm-utility-classes.css");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 :root {
   --theme-color1: #191e24;
   --theme-color2: #02a65c;
@@ -712,7 +713,7 @@ li {
 }
 
 .style-font {
-  font-family: var(--style-font);
+  font-family: "Style Script", cursive;
 }
 
 .page-wrapper {

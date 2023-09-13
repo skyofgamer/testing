@@ -546,40 +546,38 @@
                 
                   @media (min-width: 480px) {
                     .custom-heading {
-                      font-size: 34px !important; /* Adjust font size as needed for this range */
                       margin-bottom: 50px !important;
                     }
                   }
                  
-                
+                  @media (min-width: 768px) {
+            .custom-heading {
+                margin-top: 0;
+                margin-bottom: 0 ;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
                   /* Add your custom styles for the span if needed */
                 </style>
                 
                 <script>
-                  // Function to set font size based on screen width
-                  function setFontSize() {
-                    const screenWidth = window.innerWidth;
-                    const customHeading = document.querySelector('.custom-heading');
-                
-                    if (screenWidth >= 1280) {
-                      // For screens between 802px and 889px
-                      customHeading.style.fontSize = '34px';
-                    } else if (screenWidth >= 992) {
-                      // For laptops and desktops
-                      customHeading.style.fontSize = '86px';
-                    } else {
-                      // For other screen sizes, you can set a default size here if needed.
-                    }
-                  }
-                
-                  // Call the function on page load and window resize
-                  window.onload = setFontSize;
-                  window.addEventListener('resize', setFontSize);
+                 
                 </script>
-                <h1 class="text-left custom-heading" style="overflow: visible; height: auto; margin-top: 20px; margin-bottom: 15px;">
-                  Dubai’s best<span class="style-font font-size-35">Online</span> <br> <br /> Coaching Classes 
+                <style>
+                  /* Add custom styles for the <h1> element */
+                  h1.custom-heading {
+                    
+                    
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                  }
+                </style>
+                
+                <h1  class="text-left custom-heading font-size-100" style=";= height: 140px; margin-top: -20 !important; margin-bottom: -20 !important;">
+                  Dubai’s best<span class="style-font font-size-55">Online</span> <br> Coaching Classes <br>
 
-                <br>
+               
             </h1>
                 
               </h1></div>
