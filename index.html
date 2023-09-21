@@ -655,51 +655,48 @@
         .category-block-current-two {
           box-sizing: border-box;
           display: flex;
-          justify-self: center;
+          justify-content: center;
         }
-
-        .block-1 {
-          margin-left: 0; /* Remove the margin-left */
+      
+        /* Set a fixed width for each block */
+        .category-block-current-two .inner-box {
+          flex: 1;
         }
-
-        /* Clear the float after every 6th element to create a new row */
-
-        /* On screens with a maximum width of 768px */
+      
+        /* On screens with a maximum width of 1100px */
         @media (max-width: 1100px) {
           .category-block-current-two {
-            position: relative;
-            padding: 0px 15px;
-            margin: 0 auto;
+            flex-wrap: wrap; /* Allow blocks to wrap to the next row */
             width: 100%;
           }
-          .category-block-current-two {
-            box-sizing: 0;
-            display: block;
-            justify-self: center;
-          }
-
+      
           #Courses {
             display: flex;
             align-items: center;
-            margin-left: 5%;
-            display: flex;
             justify-content: center;
           }
         }
-
+      
         /* On screens with a maximum width of 400px (mobile screens) */
         @media (max-width: 400px) {
-          .category-block-current-two,
-          .block-1 {
-            width: 100%; /* Make both elements full width on mobile */
+          .category-block-current-two {
+            flex-direction: column; /* Stack blocks vertically on mobile */
           }
         }
-
+      
         .category-block-current-two {
           margin-right: auto; /* Center the blocks horizontally */
           margin-left: auto; /* Center the blocks horizontally */
         }
+      
+        @media (min-width: 1101px) {
+          /* Set a fixed width for each block */
+          .category-block-current-two .inner-box {
+            flex: 1;
+          }
+        }
       </style>
+      
       <!-- Categories Section Two -->
       <section id="Courses" class="categories-section-current-two">
         <div class="auto-container">
@@ -711,7 +708,7 @@
           <div class="row">
             <!-- Category Block Two -->
             <div
-              class="category-block-current-two block-1 col-lg-3 col-md-6 col-sm-6"
+              class="category-block-current-two block-1"
             >
               <div class="inner-box">
                 <div class="icon-box icon-box1">
@@ -725,19 +722,19 @@
             </div>
 
             <!-- Category Block Two -->
-            <div class="category-block-current-two block-2 col-lg-3 col-md-6 col-sm-6">
+            <div class="category-block-current-two block-2">
               <div class="inner-box">
                 <div class="icon-box icon-box2">
                   <i class="icon flaticon-study-1"></i>
                 </div>
                 <h4 class="title">
-                  <a href="l">Expert Faculty Led by Ms. Seema Pahuja
+                  <a href="#">Expert Faculty Led by Ms. Seema Pahuja
                   </a>
                 </h4>
                 
               </div>
             </div>
-            <div class="category-block-current-two block-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="category-block-current-two block-3">
               <div class="inner-box">
                 <div class="icon-box icon-box3">
                   <i class="icon flaticon-study-1"></i>
@@ -749,7 +746,7 @@
                 
               </div>
             </div>
-            <div class="category-block-current-two block-4 col-lg-3 col-md-6 col-sm-6">
+            <div class="category-block-current-two block-4">
               <div class="inner-box">
                
                   <i class="icon-box icon-box1 icon flaticon-elearning"></i>
@@ -762,7 +759,7 @@
               </div>
             </div>
             <!-- Category Block Two -->
-            <div class="category-block-current-two block-5 col-lg-3 col-md-6 col-sm-6">
+            <div class="category-block-current-two block-5">
               <div class="inner-box">
                 <div class="icon-box icon-box2">
                   <i class="icon flaticon-study"></i>
@@ -776,7 +773,7 @@
             </div>
 
             <!-- Category Block Two -->
-            <div class="category-block-current-two block-6 col-lg-3 col-md-6 col-sm-6">
+            <div class="category-block-current-two block-6">
               <div class="inner-box">
                 <div class="icon-box icon-box3">
                   <i class="icon flaticon-study"></i>
@@ -893,7 +890,7 @@
                   <i class="icon fa fa-calculator"></i>
                 </div>
                 <h6 class="title">
-                  <a href="l">Maths</a>
+                  <a href="#">Maths</a>
                 </h6>
               </div>
             </div>
@@ -907,7 +904,7 @@
                   <i class="icon fa fa-flask"></i>
                 </div>
                 <h6 class="title">
-                  <a href="l">Science</a>
+                  <a href="#">Science</a>
                 </h6>
               </div>
             </div>
@@ -921,7 +918,7 @@
                   <i class="icon flaticon-online-learning"></i>
                 </div>
                 <h6 class="title">
-                  <a href="l">Computer <br />Science</a>
+                  <a href="#">Computer <br />Science</a>
                 </h6>
               </div>
             </div>
@@ -935,7 +932,7 @@
                   <i class="icon flaticon-study"></i>
                 </div>
                 <h6 class="title">
-                  <a href="l">Social Studies</a>
+                  <a href="#">Social Studies</a>
                 </h6>
               </div>
             </div>
@@ -949,7 +946,7 @@
                   <i class="icon fa fa-language"></i>
                 </div>
                 <h6 class="title">
-                  <a href="l">English 
+                  <a href="#">English 
                   </a>
                 </h6>
               </div>
@@ -1765,10 +1762,6 @@ margin-left: 100px;
                         <a href="mailto:seemapahuja7@gmail.com"
                           >seemapahuja7@gmail.com</a
                         >
-                      </li>
-                      <li>
-                        <i class="fa fa-map-marker-alt"></i> 80 Broklyn Golden
-                        Street. New York. USA
                       </li>
                     </ul>
                     <div class="subscribe-form">
