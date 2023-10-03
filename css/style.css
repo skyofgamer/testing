@@ -5420,10 +5420,6 @@ Section Title
   transition: all 300ms ease;
 }
 
-.category-block-current-two .inner-box:hover {
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
-}
 
 .category-block-current-two .inner-box:hover::before {
   border-color: var(--border-theme-color2);
